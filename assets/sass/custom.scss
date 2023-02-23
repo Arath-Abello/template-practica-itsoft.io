@@ -1,0 +1,625 @@
+//*esta variable ya tiene un color predeterminado que da bootstrap.. Así que que modificamos con un color personalizado para el background del navbar y lo llamamos como clase para que se aplique el color
+$red: #FF3C00;
+//* tamaño de fuente personalizada para la clase navbar-brand
+$font-size-lg: 1.4rem;
+
+//* para los figures y no tiene nada que ver con cosas del bootstrap
+$ancho_automatico: auto;
+
+@media screen and (max-width: 1463.98px) {
+
+    @mixin centrado_vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    p {
+        font-weight: 400;
+    }
+
+
+    nav.fondo-rojo {
+        background-color: $red;
+        position: fixed;
+        z-index: 999;
+        transition: all 500ms;
+    }
+
+    nav.fondo-rojo ul li a.nav-link{
+        color: white;
+    }
+
+    nav.fondo-blanco {
+        background-color: white;
+        position: fixed;
+        z-index: 999;
+        transition: all 500ms;
+    }
+
+    div.spinner-contenedor {
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 900s;
+    }
+
+    div.spinner-border {
+        width: 60px;
+        height: 60px;
+    }
+
+    div.bg-imagen {
+        position: relative;
+        background-image: url('../img/fondo-section-main.webp');
+        background-size: cover;
+    }
+
+    figure.f-relative {
+        margin: 0;
+    }
+
+    div.rotar {
+        position: absolute;
+        left: -50px;
+        top: 55px;
+
+        @keyframes rotar {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    div.rotar img {
+        max-width: 100%;
+        height: auto;
+        animation-name: rotar;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    section.section-main,
+    section.section5,
+    div.col-12.col-md-6.solutions,
+    section.services {
+        @include centrado_vertical;
+    }
+
+    div.div-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    a.enlace-btn-main {
+        text-decoration: none;
+        color: white;
+    }
+
+    div.boton-enlace {
+        background-color: $red;
+    }
+
+    div.boton-enlace:hover {
+        background-color: white;
+    }
+
+    div.boton-enlace:hover a.enlace-btn-main {
+        color: $red;
+    }
+
+    header.header-section-main,
+    article.article-section-main,
+    p.article-p {
+        text-align: center;
+    }
+
+    figure.figure-contenedor img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .h2-rojo {
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: $red;
+    }
+
+    div.section2 {
+        margin-top: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    span.span-rojo {
+        color: $red;
+    }
+
+    p.p {
+        color: #616161;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    p.p-margin-top {
+        margin-top: 20px;
+    }
+
+    div.contenedor-caracteristicas {
+        padding-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    div.caracteristica1,
+    div.caracteristica2 {
+        display: flex;
+    }
+
+    h2.h2-caract {
+        color: #232323;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    p.p-caract,
+    figure.carrusel figcaption p {
+        font-size: 12px;
+    }
+
+    div.caracteristica1-icono1 {
+        font-size: 45px;
+        margin-right: 25px;
+        color: $red;
+    }
+
+    div.caracteristica2-icono2 {
+        color: $red;
+        margin-right: 40px;
+        font-size: 45px;
+    }
+
+    .section3 {
+        background-color: #F4F7FC;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 39px;
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    header.header-article-section3 {
+        margin-bottom: 30px;
+    }
+
+    article.article-section3 {
+        margin-bottom: 35px;
+        width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    div.contenedor-slider {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        background-color: white;
+        border-radius: 6px;
+    }
+
+    figure.carrusel figcaption h2 {
+        margin: 20px 0px;
+    }
+
+    figure.carrusel img {
+        border-radius: 10px;
+    }
+
+    figure.carrusel figcaption {
+        padding: 20px 20px 0px 20px;
+    }
+
+
+    figure.carrusel figcaption div {
+        background: #F4F7FC;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .relative a {
+        display: block;
+        padding: 16px 20px;
+        color: #202020;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .relative a::before {
+        content: "";
+        background: $red;
+        position: absolute;
+        height: 100%;
+        width: 100px;
+        right: -15px;
+        top: 0;
+        padding: 0 0 54px 0;
+        transform: skew(-29deg);
+        transition: 0.3s;
+    }
+
+    .relative a span i {
+        color: #fff;
+        right: 20px;
+        position: absolute;
+        line-height: 1.5;
+    }
+
+    .relative:hover {
+        background-color: $red;
+    }
+
+    .relative:hover a {
+        color: white;
+    }
+
+    .relative:hover a::before {
+        background-color: #222;
+    }
+
+    figure.carrusel figcaption a {
+        display: block;
+        padding: 16px 20px;
+        color: #202020;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    figure.carrusel figcaption a::before {
+        content: "";
+        background: $red;
+        position: absolute;
+        height: 100%;
+        width: 100px;
+        right: -15px;
+        top: 0;
+        padding: 0 0 54px 0;
+        transform: skew(-29deg);
+        transition: 0.3s;
+    }
+
+    figure.carrusel figcaption a span i {
+        color: #fff;
+        right: 20px;
+        position: absolute;
+        line-height: 1.5;
+    }
+
+    // *Dentro de la regla, el atributo "content" se utiliza para especificar el contenido que se mostrará antes del elemento HTML seleccionado. En este caso, el contenido es un carácter Unicode "\f30b", que representa una flecha larga hacia la derecha. Este código se utiliza en combinación con una biblioteca de iconos, como Font Awesome,
+    .fa-long-arrow-alt-right:before {
+        content: "\f30b";
+    }
+
+    figure.carrusel figcaption div:hover {
+        background-color: $red;
+    }
+
+    figure.carrusel figcaption div:hover a {
+        color: white;
+    }
+
+    figure.carrusel figcaption div:hover a::before {
+        background-color: #222;
+    }
+
+    div.contenedor-sec4 {
+        background-image: url('../img/ch-bg.webp');
+        padding-top: 46px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 70px;
+        background-position: bottom;
+    }
+
+    .section4 article h3 {
+        color: white;
+    }
+
+    .section4 article p {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .icono {
+        font-size: 45px;
+        color: #f12a02;
+    }
+
+    .p-font {
+        color: #616161;
+        font-size: 17px;
+        margin-bottom: 50px;
+    }
+
+    .profesional-team {
+        padding-top: 75px;
+    }
+
+    figure.profesional1 {
+        position: relative;
+        transition: .3s;
+        width: $ancho_automatico;
+    }
+
+    .profesional1-caption {
+        background: #fff;
+        padding: 20px 0;
+        width: 80%;
+        margin: auto;
+        border-radius: 5px;
+        top: -55px;
+        position: relative;
+        box-shadow: 0 0 15px 0 rgb(32 46 0 / 6%);
+        transition: .3s;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .rrss-profesionales {
+        position: absolute;
+        top: 40%;
+        right: 0px;
+        list-style: none;
+        padding: 15px;
+        background-color: white;
+        transition: .3s;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .rrss-profesionales li a i {
+        color: #f12a02;
+    }
+
+    .profesional1:hover {
+        transform: translateY(-25px);
+    }
+
+    .profesional1:hover .rrss-profesionales {
+        opacity: 1;
+    }
+
+    .profesional1-caption:hover h3 {
+        color: #f12a02;
+        transition: .3s;
+    }
+
+    button.btn-form-sec5 {
+        background: #FF3C00;
+        padding: 14px 39px;
+        color: #fff;
+    }
+
+    button.btn-form-sec5:hover {
+        background-color: #bd2d10;
+        color: white;
+    }
+
+    .section7 {
+        margin-bottom: 30px;
+    }
+
+    .section8 {
+        background: linear-gradient(360deg, rgba(255, 60, 0, 0.87), rgba(241, 141, 1, 0.87)), #f4f7fc url('../img/pd-sh.webp') center center/cover no-repeat scroll;
+        padding: 60px 0px 60px 0px;
+    }
+
+
+
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card {
+        margin: 0 0.5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+        border-radius: 0;
+    }
+
+    .carousel-inner {
+        padding: 1em;
+    }
+
+    button.carousel-control-prev,
+    button.carousel-control-next {
+        background-color: black;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    button.carousel-control-prev {
+        left: 12%;
+    }
+
+    button.carousel-control-next {
+        right: 12%;
+    }
+
+    div.row.contenedor-slider-principal-sm {
+        display: none;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    div.card-body {
+        overflow: hidden;
+    }
+
+    .choose-us,
+    .figure-contenedor,
+    .profesional1 {
+        width: $ancho_automatico;
+    }
+
+    .centrar {
+        text-align: center;
+    }
+
+    .sect9-figur{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sect9-figur img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .sect9-figur::before{
+        transition: all .5s ease-in;
+        background-color: rgb(0, 194, 129);
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .sect9-figur:hover::before{
+        opacity: .6 ;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    button.carousel-control-prev {
+        left: 0;
+    }
+
+    button.carousel-control-next {
+        right: 0;
+    }
+
+    section.section2 {
+        margin-top: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .hero {
+        display: none;
+    }
+
+    div.bg-imagen {
+        height: 70vh;
+    }
+
+    div.div-w-auto {
+        width: $ancho_automatico;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.contenedor-sec4 {
+        background-position: right;
+    }
+
+    .relative a::before {
+        transform: skew(0deg);
+        width: 60px;
+    }
+
+    div.row.slider-md {
+        display: block;
+    }
+
+    div.row.contenedor-slider-principal-sm {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .hero {
+        display: none;
+    }
+
+    div.bg-imagen {
+        height: 70vh;
+    }
+
+    .section2 {
+        margin-top: 50px;
+    }
+
+    div.row.slider-md {
+        display: none;
+    }
+
+    div.row.contenedor-slider-principal-sm {
+        display: block;
+    }
+
+    button.carousel-control-prev {
+        left: 0;
+    }
+
+    button.carousel-control-next {
+        right: 0;
+    }
+
+    section.section2 {
+        margin-top: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    
+}
