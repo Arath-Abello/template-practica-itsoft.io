@@ -351,6 +351,9 @@
     background: linear-gradient(360deg, rgba(255, 60, 0, 0.87), rgba(241, 141, 1, 0.87)), #f4f7fc url("../img/pd-sh.webp") center center/cover no-repeat scroll;
     padding: 60px 0px 60px 0px;
   }
+  .section9, footer {
+    padding: 60px 0px 60px 0px;
+  }
   .cards-wrapper {
     display: flex;
     justify-content: center;
