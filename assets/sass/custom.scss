@@ -6,6 +6,8 @@ $font-size-lg: 1.4rem;
 //* para los figures y no tiene nada que ver con cosas del bootstrap
 $ancho_automatico: auto;
 
+$pt_pb: 60px 0px 60px 0px;
+
 @media screen and (max-width: 1600px) {
 
     @mixin centrado_vertical {
@@ -436,7 +438,11 @@ $ancho_automatico: auto;
 
     .section8 {
         background: linear-gradient(360deg, rgba(255, 60, 0, 0.87), rgba(241, 141, 1, 0.87)), #f4f7fc url('../img/pd-sh.webp') center center/cover no-repeat scroll;
-        padding: 60px 0px 60px 0px;
+        padding: $pt_pb;
+    }
+
+    .section9, footer{
+        padding: $pt_pb;
     }
 
 
