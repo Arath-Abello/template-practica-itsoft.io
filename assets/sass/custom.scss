@@ -8,7 +8,7 @@ $ancho_automatico: auto;
 
 $pt_pb: 60px 0px 60px 0px;
 
-@media screen and (max-width: 1600px) {
+
 
     @mixin centrado_vertical {
         display: flex;
@@ -444,8 +444,8 @@ $pt_pb: 60px 0px 60px 0px;
     .section9, footer{
         padding: $pt_pb;
     }
-
-
+    @media screen and (max-width: 2600px) {
+//!
 
     .cards-wrapper {
         display: flex;
