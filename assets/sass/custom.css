@@ -192,16 +192,10 @@ figure.carrusel figcaption p {
   font-size: 0.75rem;
 }
 
-div.caracteristica1-icono1 {
+div.caracteristica1-icono1, div.caracteristica2-icono2 {
   font-size: 2.8125rem;
-  margin-right: 1.5625em;
+  margin-right: 1em;
   color: #FF3C00;
-}
-
-div.caracteristica2-icono2 {
-  color: #FF3C00;
-  margin-right: 2.5em;
-  font-size: 2.8125rem;
 }
 
 .section3 {
@@ -604,4 +598,10 @@ button.btn-form-sec5:hover {
 
 .form-h3 {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .caracteristica1, .caracteristica2 {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=custom.css.map */

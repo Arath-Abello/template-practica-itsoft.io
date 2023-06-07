@@ -222,16 +222,10 @@ $pt_pb: 3.75em 0px 3.75em 0px;
         font-size: .75rem;
     }
 
-    div.caracteristica1-icono1 {
+    div.caracteristica1-icono1, div.caracteristica2-icono2 {
         font-size: 2.8125rem;
-        margin-right: 1.5625em;
+        margin-right: 1em;
         color: $red;
-    }
-
-    div.caracteristica2-icono2 {
-        color: $red;
-        margin-right: 2.5em;
-        font-size: 2.8125rem;
     }
 
     .section3 {
@@ -672,4 +666,10 @@ $pt_pb: 3.75em 0px 3.75em 0px;
 
 .form-h3{
     font-size: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+    .caracteristica1, .caracteristica2{
+        flex-direction: column;
+    }
 }
