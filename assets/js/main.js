@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 
     setTimeout(() => {
         spinner.style.display = 'none';
-    }, 1000);
+    }, 500);
 
 });
 
